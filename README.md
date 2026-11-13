@@ -10,6 +10,9 @@ Websites opened through the proxy can display their own ads, since nothing filte
 
 ## Advertising cleanup
 
+The ad-script loader (llvpn.com / dd133.com), the ad notice, and the ad-triggered page reload in the main bundle are now disabled.
+
+
 This fork removes the original app's injected advertising scripts and ad-promotional notices, and removes the original Google Analytics loader. Websites opened through the proxy can display their own ads; those ads come from the third-party website, not this app.
 
 ## Maintaining this fork
