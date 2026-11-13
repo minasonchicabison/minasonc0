@@ -2,14 +2,16 @@
 
 This is a customized copy of the original `lucideproxy/svg` project.
 
-## Ad-filter setting
+## GeForce NOW compatibility and ad filtering
 
-Open **Settings → Browsing → Ad filtering on proxied sites**.
+Ad filtering is **OFF by default** so game-streaming services such as GeForce NOW use the normal proxy route. On the first load after this update, the app also performs a one-time migration that changes an older saved `adblock: true` preference to OFF. After that migration, the setting remains under your control.
+
+Open **Settings → Browsing → Filter ads on proxied sites** to change it:
 
 - **ON** uses the filtered proxy route (`/fairs/`).
-- **OFF** uses the normal, unfiltered proxy route (`/piers/`). This fully bypasses the ad-filtering route and is the recommended setting to try when GeForce NOW streaming, sign-in, or game launch is affected.
+- **OFF** uses the normal, unfiltered proxy route (`/piers/`). Keep it OFF when using GeForce NOW if the filtered route interferes with sign-in, streaming, or game launch.
 
-Changing the switch saves the setting and restarts the proxy controller with the selected route. After changing it, allow the controller to restart before opening the site you want to use.
+This is a global proxy setting, not a GeForce NOW-only exception: turning filtering off also allows third-party websites elsewhere to display their own ads. Changing the switch saves the setting and restarts the proxy controller with the selected route. After changing it, allow the controller to restart before opening the site you want to use.
 
 ## Advertising cleanup
 
